@@ -114,11 +114,9 @@ Visit → [http://localhost:3000](http://localhost:3000)
 
 ## 📸 Responsive Layout Snapshots
 
-```md
-![Desktop layout](docs/snapshots/desktop.png)
-![Tab layout](docs/snapshots/tab.png)
-![Mobile layout](docs/snapshots/mobile.png)
-```
+![Desktop layout](./docs/snapshots/desktop.png)
+![Tab layout](./docs/snapshots/tab.png)
+![Mobile layout](./docs/snapshots/mobile.png)
 
 ---
 
