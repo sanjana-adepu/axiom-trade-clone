@@ -2,7 +2,7 @@
 import { Filter } from "lucide-react";
 import React from 'react';
 import type { Token } from '@/lib/api'; 
-import TokenDisplayCard from './DisplayCard'; 
+import TokenDisplayCard from '../ui/DisplayCard'; 
 
 interface TokenDesktopLayoutProps {
     pulse1Tokens: Token[];

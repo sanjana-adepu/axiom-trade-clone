@@ -2,8 +2,8 @@
 import { Filter, Menu } from "lucide-react";
 import React from 'react';
 import type { Token } from '@/lib/api';  
-import TokenDisplayCard from './DisplayCard'; 
-import { columnHeaders, PulseId } from './Table'; 
+import TokenDisplayCard from '../ui/DisplayCard'; 
+import { columnHeaders, PulseId } from '../Table'; 
 
 interface TokenMobileLayoutProps {
     selectedPulse: PulseId;

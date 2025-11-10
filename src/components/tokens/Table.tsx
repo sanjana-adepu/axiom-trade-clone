@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { useTokens } from '@/hooks/useTokens';
-import TokenMobileLayout from './MobileLayout';
-import TokenTabletLayout from './TableLayout';
-import TokenDesktopLayout from './DesktopLayout';
+import TokenMobileLayout from './layouts/MobileLayout';
+import TokenTabletLayout from './layouts/TableLayout';
+import TokenDesktopLayout from './layouts/DesktopLayout';
 
 export const columnHeaders = [
     { id: 1 as const, name: "New Pairs" },

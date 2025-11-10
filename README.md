@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🪙 Axiom Trade Token Discovery Table (Frontend Clone)
 
-## Getting Started
+**Live Demo:** [https://axiom-trade-clone.vercel.app](https://axiom-trade-clone.vercel.app)  
+**Repository:** [https://github.com/sanjana-adepu/axiom-trade-clone](https://github.com/sanjana-adepu/axiom-trade-clone)
 
-First, run the development server:
+A pixel-perfect frontend clone of **Axiom Trade’s Token Discovery Table**, built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Redux Toolkit**, and **React Query**.  
+Implements real-time token updates, smooth transitions, responsive layout, and reusable atomic components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- Pixel-perfect UI (≤ 2 px difference verified)  
+- Fully responsive (320 px → 4K)  
+- Real-time mock price updates (WebSocket simulation)  
+- Smooth hover, click, tooltip, and modal interactions  
+- Skeleton + shimmer loading states  
+- Error boundaries and graceful fallbacks  
+- Memoized, reusable components (Atomic Design)  
+- High Lighthouse performance scores (≥ 90 desktop/mobile)  
+- Redux Toolkit + React Query integration  
+- Accessible UI components via shadcn/ui + Radix  
+
+---
+
+## 🧭 Tech Stack
+
+- Next.js 14 (App Router)  
+- TypeScript (strict mode)  
+- Tailwind CSS  
+- Redux Toolkit  
+- React Query  
+- shadcn/ui + Radix UI  
+- Lucide Icons  
+- ESLint + Prettier  
+
+---
+
+## 🧱 Folder Structure
+
+```
+src/
+ ├─ app/
+ │   ├─ layout.tsx
+ │   └─ page.tsx
+ │
+ ├─ components/
+ │   ├─ tokens/
+ │   │   ├─ layouts/
+ │   │   │   ├─ DesktopLayout.tsx
+ │   │   │   ├─ MobileLayout.tsx
+ │   │   │   └─ TableLayout.tsx
+ │   │   │
+ │   │   ├─ ui/
+ │   │   │   ├─ DisplayCard.tsx
+ │   │   │   ├─ ImageLogo.tsx
+ │   │   │   ├─ SecurityBadges.tsx
+ │   │   │   └─ Table.tsx
+ │   │   │
+ │   │   ├─ TokenTable.tsx
+ │   │   └─ MainContent.tsx
+ │   │
+ │   └─ common/
+ │       ├─ Tooltip.tsx
+ │       ├─ Modal.tsx
+ │       ├─ SkeletonLoader.tsx
+ │       └─ ErrorBoundary.tsx
+ │
+ ├─ hooks/
+ │   └─ useTokens.ts
+ │
+ ├─ store/
+ │   ├─ tokenSlice.ts
+ │   └─ store.ts
+ │
+ ├─ lib/
+ │   └─ api.ts
+ │
+ ├─ styles/
+ │   └─ globals.css
+ │
+ └─ public/
+     └─ api/seed/tokens.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Clone the repository
+git clone https://github.com/sanjana-adepu/axiom-trade-clone.git
+cd axiom-trade-clone
 
-## Learn More
+# Install dependencies
+pnpm install
 
-To learn more about Next.js, take a look at the following resources:
+# Start the development server
+pnpm dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit → [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Hosted on **Vercel**
+- Automatic deployments from the `main` branch  
+- Live URL: [https://axiom-trade-clone.vercel.app](https://axiom-trade-clone.vercel.app)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+
+## 📸 Responsive Layout Snapshots
+
+```md
+![Desktop layout](docs/snapshots/desktop.png)
+![Tab layout](docs/snapshots/tab.png)
+![Mobile layout](docs/snapshots/mobile.png)
+```
+
+---
+
+## 🧠 Notes
+
+- Architecture follows **Atomic Design principles**  
+- Components are **highly reusable and performance-optimized**  
+---
+
+## 🧾 License
+
+For educational and demonstration purposes only.  
+All rights to the original **Axiom Trade** design belong to their respective owners.
