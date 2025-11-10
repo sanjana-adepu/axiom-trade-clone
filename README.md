@@ -1,6 +1,6 @@
 # 🪙 Axiom Trade Token Discovery Table (Frontend Clone)
 
-**Live Demo:** [https://axiom-trade-clone.vercel.app](https://axiom-trade-clone.vercel.app)  
+**Live Demo:** [https://axiom-trade-clone-pink.vercel.app/](https://axiom-trade-clone-pink.vercel.app/)  
 **Repository:** [https://github.com/sanjana-adepu/axiom-trade-clone](https://github.com/sanjana-adepu/axiom-trade-clone)
 
 A pixel-perfect frontend clone of **Axiom Trade’s Token Discovery Table**, built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Redux Toolkit**, and **React Query**.  
@@ -107,15 +107,20 @@ Visit → [http://localhost:3000](http://localhost:3000)
 
 - Hosted on **Vercel**
 - Automatic deployments from the `main` branch  
-- Live URL: [https://axiom-trade-clone.vercel.app](https://axiom-trade-clone.vercel.app)
+- Live URL: [https://axiom-trade-clone-pink.vercel.app/](https://axiom-trade-clone-pink.vercel.app/)
 
 ---
 
 
 ## 📸 Responsive Layout Snapshots
 
+# Desktop view
 ![Desktop layout](./docs/snapshots/desktop.png)
+
+# Tab view
 ![Tab layout](./docs/snapshots/tab.png)
+
+# Mobile view
 ![Mobile layout](./docs/snapshots/mobile.png)
 
 ---
