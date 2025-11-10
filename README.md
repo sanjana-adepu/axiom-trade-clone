@@ -115,10 +115,9 @@ Visit → [http://localhost:3000](http://localhost:3000)
 ## 📸 Responsive Layout Snapshots
 
 ```md
-![Desktop layout](https://raw.githubusercontent.com/sanjana-adepu/axiom-trade-clone/main/public/desktop.png)
-![Tab layout](https://raw.githubusercontent.com/sanjana-adepu/axiom-trade-clone/main/public/tab.png)
-![Mobile layout](https://raw.githubusercontent.com/sanjana-adepu/axiom-trade-clone/main/public/mobile.png)
-
+![Desktop layout](docs/snapshots/desktop.png)
+![Tab layout](docs/snapshots/tab.png)
+![Mobile layout](docs/snapshots/mobile.png)
 ```
 
 ---
