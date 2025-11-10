@@ -19,10 +19,10 @@ const TokenDisplayCard: React.FC<{ token: Token }> = ({ token }) => {
       className="flex flex-row gap-2 p-3 md:p-4 bg-gray-900/50 hover:bg-gray-800/70 transition duration-300 cursor-pointer border-b border-gray-800 md:min-h-[6rem]"
     >
       
-      {/* 1. Logo/Address Column: Use the imported component */}
+      {/* Logo/Address Column */}
       <TokenImageLogo token={token} />
       
-      {/* 2. Main Content Column: Use the imported component */}
+      {/* Main Content Column */}
       <TokenMainContent token={token} formatValue={formatValue} />
       
     </a>

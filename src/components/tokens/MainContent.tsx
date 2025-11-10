@@ -8,19 +8,14 @@ import {
   Sun,
 } from "lucide-react";
 import type { Token } from "@/store/tokenSlice";
-import SecurityBadges from "./SecurityBadges"; // Import the badges component
+import SecurityBadges from "./SecurityBadges"; 
 
-// Define the props type, requiring the whole token object
 interface TokenMainContentProps {
   token: Token;
-  formatValue: (value: number) => string; // Pass the formatting function
+  formatValue: (value: number) => string; 
 }
 
-// ---------------------------------------------------------------
-// COMPONENT: TokenMainContent
-// ---------------------------------------------------------------
 const TokenMainContent: React.FC<TokenMainContentProps> = ({ token, formatValue }) => (
-  // Main Content Column: Use flex-1 to take up remaining space
   <div className="flex flex-col flex-1">
     
     {/* TOP ROW: Name, Symbol, Age, Stats, MC/V */}
@@ -28,10 +23,10 @@ const TokenMainContent: React.FC<TokenMainContentProps> = ({ token, formatValue 
       <div className="flex flex-col">
         {/* Name/Symbol */}
         <div className="text-lg md:text-base font-bold text-white leading-tight">
-          {token.symbol }
-          <span className="text-sm md:text-xs text-gray-400 font-medium">
-            { token.name}{" "}
-          </span>           
+            {token.symbol} {  }
+            <span className="text-sm md:text-xs text-gray-400 font-medium">
+                {token.name}
+            </span>
         </div>
         <div className="">
           {/* Age and other stats (Search, Users, Buys, Trophy, Crown) */}
@@ -73,7 +68,7 @@ const TokenMainContent: React.FC<TokenMainContentProps> = ({ token, formatValue 
         </div>
       </div>
       
-      {/* MC/V Metrics and Holders/Burned Stats - PUSHED RIGHT */}
+      {/* MC/V Metrics and Holders Stats */}
       <div className="flex flex-col items-end space-y-1 ml-auto">
         <div className="text-right">
           <div className="text-sm text-gray-400">
@@ -84,7 +79,7 @@ const TokenMainContent: React.FC<TokenMainContentProps> = ({ token, formatValue 
           </div>
         </div>
         
-        {/* Holders and Burned Stats */}
+        {/* Holders Stats */}
         <div className="text-xs text-gray-500 flex flex-col items-end">
             <div className="flex items-center space-x-1">
                 <Diamond className="w-3 h-3" aria-label="Fees" />
@@ -95,7 +90,7 @@ const TokenMainContent: React.FC<TokenMainContentProps> = ({ token, formatValue 
       </div>
     </div>
     
-    {/* INSERTION POINT: Security Badges Row, using the imported component */}
+    {/* Security Badges Row*/}
     <SecurityBadges securityMetrics={token.securityMetrics} />
   </div>
 );

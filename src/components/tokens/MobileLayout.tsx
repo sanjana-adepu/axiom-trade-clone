@@ -1,9 +1,9 @@
 // ./TokenMobileLayout.tsx
 import { Filter, Menu } from "lucide-react";
 import React from 'react';
-import type { Token } from '@/lib/api';  // Assuming Token type is exported
-import TokenDisplayCard from './DisplayCard'; // Import the card component
-import { columnHeaders, PulseId } from './Table'; // Import types/constants
+import type { Token } from '@/lib/api';  
+import TokenDisplayCard from './DisplayCard'; 
+import { columnHeaders, PulseId } from './Table'; 
 
 interface TokenMobileLayoutProps {
     selectedPulse: PulseId;

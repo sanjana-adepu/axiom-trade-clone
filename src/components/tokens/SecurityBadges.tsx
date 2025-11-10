@@ -7,44 +7,39 @@ import {
   Ghost,
   Users,
 } from "lucide-react";
-import type { Token } from "@/store/tokenSlice"; // Centralized Token type from the store
-
-// Define the props type for SecurityBadges
+import type { Token } from "@/store/tokenSlice"; 
 interface SecurityBadgesProps {
   securityMetrics: Token["securityMetrics"];
 }
 
-// ---------------------------------------------------------------
-// COMPONENT: SecurityBadges
-// ---------------------------------------------------------------
 const SecurityBadges: React.FC<SecurityBadgesProps> = ({ securityMetrics }) => (
   <div className="flex flex-row flex-wrap items-center gap-2 py-2">
     
-    {/* 1. Anti-Bot / Red Person */}
+    {/* Anti-Bot / Red Person */}
     <div className="flex items-center space-x-1 px-2 py-0.5 rounded-full border border-red-500/50 text-red-400 text-xs">
       <UserX className="w-3 h-3 text-red-500" />
       <span>{securityMetrics.antiBot}</span>
     </div>
 
-    {/* 2. LP Lock / Green Chef Hat */}
+    {/* LP Lock / Green Chef Hat */}
     <div className="flex items-center space-x-1 px-2 py-0.5 rounded-full border border-green-500/50 text-green-400 text-xs">
       <ChefHat className="w-3 h-3 text-green-500" />
       <span>{securityMetrics.lpLock}</span>
     </div>
     
-    {/* 3. Target Tax / Red Target */}
+    {/* Target Tax / Red Target */}
     <div className="flex items-center space-x-1 px-2 py-0.5 rounded-full border border-red-500/50 text-red-400 text-xs">
       <Target className="w-3 h-3 text-red-500" />
       <span>{securityMetrics.targetTax}</span>
     </div>
     
-    {/* 4. Honeypot Risk / Red Ghost */}
+    {/* Honeypot Risk / Red Ghost */}
     <div className="flex items-center space-x-1 px-2 py-0.5 rounded-full border border-red-500/50 text-red-400 text-xs">
       <Ghost className="w-3 h-3 text-red-500" />
       <span>{securityMetrics.honeypotRisk}</span>
     </div>
     
-    {/* 5. Owner Share / Green People */}
+    {/* Owner Share / Green People */}
     <div className="flex items-center space-x-1 px-2 py-0.5 rounded-full border border-green-500/50 text-green-400 text-xs">
       <Users className="w-3 h-3 text-green-500" />
       <span>{securityMetrics.ownerShare}</span>

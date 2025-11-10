@@ -1,8 +1,8 @@
 // ./TokenDesktopLayout.tsx
 import { Filter } from "lucide-react";
 import React from 'react';
-import type { Token } from '@/lib/api'; // Assuming Token type is exported
-import TokenDisplayCard from './DisplayCard'; // Import the card component
+import type { Token } from '@/lib/api'; 
+import TokenDisplayCard from './DisplayCard'; 
 
 interface TokenDesktopLayoutProps {
     pulse1Tokens: Token[];
@@ -18,7 +18,7 @@ export default function TokenDesktopLayout({
     return (
         <div className="hidden lg:block rounded-xl overflow-hidden shadow-2xl border border-gray-800">
             
-            {/* Desktop Header Grid - Made Sticky for better UX */}
+            {/* Desktop Header Grid - Sticky */}
             <div className="grid grid-cols-3 bg-gray-900/50 text-gray-300 border-b border-gray-800 sticky top-0 z-10">
                 <div className="px-6 py-4 text-left font-bold uppercase text-xs tracking-wider border-r border-gray-800">
                     New Pairs

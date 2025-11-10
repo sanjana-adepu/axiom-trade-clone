@@ -1,8 +1,8 @@
 // ./TokenTabletLayout.tsx
 import React from 'react';
-import type { Token } from '@/lib/api';  // Assuming Token type is exported
-import TokenDisplayCard from './DisplayCard'; // Import the card component
-import { columnHeaders, PulseId } from './Table'; // Import types/constants
+import type { Token } from '@/lib/api';  
+import TokenDisplayCard from './DisplayCard'; 
+import { columnHeaders, PulseId } from './Table'; 
 
 interface TokenTabletLayoutProps {
     selectedPulse: PulseId;
@@ -20,7 +20,7 @@ export default function TokenTabletLayout({
     return (
         <div className="hidden md:block lg:hidden rounded-xl overflow-hidden shadow-2xl border border-gray-800">
 
-            {/* Tablet Tab Navigation (Simple, full-width tabs) */}
+            {/* Tablet Tab Navigation */}
             <div className="flex justify-around bg-gray-900/50 border-b border-gray-800">
                 {columnHeaders.map(col => (
                     <button
@@ -37,7 +37,7 @@ export default function TokenTabletLayout({
                 ))}
             </div>
 
-            {/* Tablet Content List (Single column of simpler cards) */}
+            {/* Tablet Content List */}
             <div className="bg-gray-950/50">
                 {filteredTokens.map(token => (
                     <div key={token.address} className="border-b border-gray-800 last:border-b-0">

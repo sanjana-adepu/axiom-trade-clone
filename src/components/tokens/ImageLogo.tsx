@@ -1,4 +1,3 @@
-// TokenImageLogo.tsx
 import React from "react";
 import type { Token } from "@/store/tokenSlice"; 
 
@@ -7,7 +6,7 @@ interface TokenImageLogoProps {
 }
 
 const TokenImageLogo: React.FC<TokenImageLogoProps> = ({ token }) => (
-  // 1. Logo/Address Column (shrink-0 prevents it from shrinking)
+  // Logo/Address Column 
   <div className="flex flex-col shrink-0">
     <div className="w-15 h-15"> 
       <img
@@ -18,7 +17,7 @@ const TokenImageLogo: React.FC<TokenImageLogoProps> = ({ token }) => (
         height={48}
       />
     </div>
-    <div className="text-xs font-mono text-gray-500">
+    <div className="text-xs mt-2 font-mono text-gray-500">
       {token.address.substring(0, 5)}...pump
     </div>
   </div>

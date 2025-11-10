@@ -10,16 +10,14 @@ body {
 /* globals.css */
 
 .shimmer-bg {
-  /* Creates a subtle gradient light that moves */
   background: linear-gradient(
     90deg, 
     transparent 0%, 
-    rgba(255, 255, 255, 0.08) 33%, /* Subtle white highlight */
+    rgba(255, 255, 255, 0.08) 33%,
     transparent 66%
   );
 }
 
-/* Base class for clipping the shimmer effect */
 .shimmer-container {
   position: relative;
   overflow: hidden;
